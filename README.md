@@ -29,45 +29,10 @@ Exemple de parcours complet — découverte du catalogue → commande → confir
   <img src="docs/screenshots/chat-demo.png" alt="Conversation de démonstration ShopBot IA" width="480">
 </p>
 
-##  Démarrage rapide
-
-```bash
-git clone https://github.com/Stephen077j/shopbot-ia.git
-cd shopbot-ia
-pip install -r requirements.txt
-
-# Configurer la clé API Claude
-cp .env.example .env   # puis mettre votre ANTHROPIC_API_KEY
-export ANTHROPIC_API_KEY=sk-ant-...
-
-uvicorn app.main:app --reload
-```
 
 Ouvrez http://localhost:8000 et discutez avec le bot : *« Qu'est-ce que vous vendez ? »*, *« Je veux 2 paquets de café »*...
 
-##  Tests
 
-```bash
-pytest -v   # aucune clé API requise
-```
-
-##  Architecture simple simple
-
-```
-Client web / WhatsApp
-        │
-        ▼
-FastAPI (streaming SSE)
-        │
-        ▼
-ShopBot ──► API Claude (claude-opus-4-8)
-        │        │ tool_use
-        │        ▼
-        └── Outils : search_products / create_order
-                 │
-                 ▼
-            Catalogue & commandes
-```
 
 | Composant | Techno |
 |---|---|
