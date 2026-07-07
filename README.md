@@ -1,4 +1,5 @@
-# 🤖 ShopBot IA — Chatbot de vente pour commerces (Claude AI)
+# inspiration et teste ShopBot IA  🤖
+— Chatbot de vente pour commerces comme (Claude AI)
 
 [![CI](https://github.com/Stephen077j/shopbot-ia/actions/workflows/ci.yml/badge.svg)](https://github.com/Stephen077j/shopbot-ia/actions)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
@@ -11,16 +12,16 @@
 
 ---
 
-## ✨ Ce qu'il fait
+##  Ce qu'il fait
 
-- 💬 **Conversation naturelle** en français ou malgache, streaming token par token
-- 🛍️ **Catalogue en direct** : l'IA utilise des *outils* (function calling) — elle ne peut pas inventer de produits ni de prix
-- 📦 **Prise de commande** : vérifie le stock, enregistre la commande, confirme le récapitulatif
-- 📱 **Webhook WhatsApp Business** prêt à brancher (vérification Meta + réception des messages)
-- ⚡ **Prompt caching** activé sur le system prompt (réduit les coûts jusqu'à 90 %)
-- ✅ **Testé** (pytest, sans clé API nécessaire) et **Dockerisé**
+-  **Conversation naturelle** en français ou malgache, streaming token par token
+-  **Catalogue en direct** : l'IA utilise des *outils* (function calling) — elle ne peut pas inventer de produits ni de prix
+-  **Prise de commande** : vérifie le stock, enregistre la commande, confirme le récapitulatif
+-  **Webhook WhatsApp Business** prêt à brancher (vérification Meta + réception des messages)
+-  **Prompt caching** activé sur le system prompt (réduit les coûts jusqu'à 90 %)
+-  **Testé** (pytest, sans clé API nécessaire) et **Dockerisé**
 
-## 📸 Aperçu
+##  Aperçu
 
 Exemple de parcours complet — découverte du catalogue → commande → confirmation :
 
@@ -28,7 +29,7 @@ Exemple de parcours complet — découverte du catalogue → commande → confir
   <img src="docs/screenshots/chat-demo.png" alt="Conversation de démonstration ShopBot IA" width="480">
 </p>
 
-## 🚀 Démarrage rapide
+##  Démarrage rapide
 
 ```bash
 git clone https://github.com/Stephen077j/shopbot-ia.git
@@ -44,13 +45,13 @@ uvicorn app.main:app --reload
 
 Ouvrez http://localhost:8000 et discutez avec le bot : *« Qu'est-ce que vous vendez ? »*, *« Je veux 2 paquets de café »*...
 
-## 🧪 Tests
+##  Tests
 
 ```bash
 pytest -v   # aucune clé API requise
 ```
 
-## 🏗️ Architecture
+##  Architecture simple simple
 
 ```
 Client web / WhatsApp
@@ -76,7 +77,7 @@ ShopBot ──► API Claude (claude-opus-4-8)
 | WhatsApp | Webhook Meta Graph API |
 | CI | GitHub Actions |
 
-## 📱 Brancher WhatsApp Business
+##  idee de Brancher WhatsApp Business
 
 1. Créez une app sur [developers.facebook.com](https://developers.facebook.com) avec le produit WhatsApp
 2. Configurez le webhook : URL `https://votre-domaine/webhook/whatsapp`, token = `WHATSAPP_VERIFY_TOKEN`
@@ -84,9 +85,8 @@ ShopBot ──► API Claude (claude-opus-4-8)
 
 ---
 
-## 💼 Vous voulez un chatbot pour votre business ?
+##  Vous voulez un chatbot pour votre business ?
 
 Je crée des assistants IA sur mesure (WhatsApp, Messenger, site web) connectés à votre catalogue, votre CRM ou vos outils.
 
-**Joel Stephen** — Développeur Full-Stack & IA
-📧 bertin.andry@gmail.com · 🐙 [github.com/Stephen077j](https://github.com/Stephen077j)
+**Joel Stephen** — Développeur  [github.com/Stephen077j](https://github.com/Stephen077j)
